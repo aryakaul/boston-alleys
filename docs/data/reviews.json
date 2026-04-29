@@ -1,0 +1,10 @@
+{
+  "_comment": "Keys are alley numbers as strings. Scores are integers 1-10.",
+  "_example": {
+    "vibe": 8,
+    "shortcut": 6,
+    "potential": 4,
+    "notes": "Your written notes about this alley go here.",
+    "photos": ["1.jpg", "2.jpg", "3.jpg"]
+  }
+}

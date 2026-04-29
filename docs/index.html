@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boston Alleys</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="map"></div>
+  <div id="legend">
+    <div class="legend-title">Boston Alleys</div>
+    <div class="legend-row"><span class="dot" style="background:#9ca3af"></span> Not yet visited</div>
+    <div class="legend-gradient">
+      <div class="gradient-label-title">Score <span class="score-info" title="Mean of three categories:&#10;Aesthetic — overall visual vibe&#10;Shortcut — usefulness as a cut-through&#10;Potential — potential for future fun shenanigans">?</span></div>
+      <div class="gradient-bar"></div>
+      <div class="gradient-labels"><span>1</span><span>10</span></div>
+    </div>
+    <div class="legend-toggles">
+      <button id="toggle-public" class="toggle-btn"><span class="line-solid"></span> Public</button>
+      <button id="toggle-private" class="toggle-btn"><span class="line-dashed"></span> Private</button>
+    </div>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

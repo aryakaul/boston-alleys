@@ -1,0 +1,18 @@
+# Notebook caches
+data/geocoded_alleys.json
+data/osm_alleys.json
+
+# Jupyter
+notebooks/.ipynb_checkpoints/
+notebooks/.virtual_documents/
+__pycache__/
+
+# Python
+*.pyc
+.env
+
+# OS
+.DS_Store
+
+# Generated assets
+docs/favicon.svg

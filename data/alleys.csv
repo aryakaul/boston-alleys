@@ -1,0 +1,75 @@
+number,district,zip,ward,from_desc,to_desc,from_addr,to_addr
+101,B.P.,02113,3,Cross Street between Commercial Street and Fulton Street,Richmond Street between Commercial Street and Fulton Street,Commercial Street & Cross Street Boston MA 02113,Richmond Street & Fulton Street Boston MA 02113
+102,B.P.,02108,3,Creek Square at the rear of 88 Blackstone Street,Marshall Street,88 Blackstone Street Boston MA 02108,Marshall Street Boston MA 02108
+301,B.P.,02114,5,92 Pinckney Street,70 River Street,92 Pinckney Street Boston MA 02114,70 River Street Boston MA 02114
+303,B.P.,02114,5,46 Pinckney Street,approximately 65 ft SE / 72 ft NE / 74 ft SW (dead end),46 Pinckney Street Boston MA 02114,
+401,B.P.,02116,4,8 Garrison Street,St. Botolph Street at Harcourt Street,8 Garrison Street Boston MA 02116,St. Botolph Street & Harcourt Street Boston MA 02116
+402,B.P.,02116,4,13 Garrison Street,261 West Newton Street,13 Garrison Street Boston MA 02116,261 West Newton Street Boston MA 02116
+403,B.P.,02116,4,10 Cumberland Street,258 West Newton Street,10 Cumberland Street Boston MA 02116,258 West Newton Street Boston MA 02116
+404,B.P.,02116,4,1 Cumberland Street,Public Alley No. 405,1 Cumberland Street Boston MA 02116,
+405,B.P.,02115,4,238 Huntington Avenue,203 St. Botolph Street,238 Huntington Avenue Boston MA 02115,203 St. Botolph Street Boston MA 02115
+414,B.P.,02115,5,11 Hereford Street,opposite 27 Massachusetts Avenue,11 Hereford Street Boston MA 02115,27 Massachusetts Avenue Boston MA 02115
+415,B.P.,02115,5,4 Gloucester Street,14 Hereford Street,4 Gloucester Street Boston MA 02115,14 Hereford Street Boston MA 02115
+416,B.P.,02115,5,1 Fairfield Street,3 Gloucester Street,1 Fairfield Street Boston MA 02115,3 Gloucester Street Boston MA 02115
+417,B.P.,02116,5,5 Exeter Street,8 Fairfield Street,5 Exeter Street Boston MA 02116,8 Fairfield Street Boston MA 02116
+418,B.P.,02116,5,328 Dartmouth Street,opposite 5 Exeter Street,328 Dartmouth Street Boston MA 02116,5 Exeter Street Boston MA 02116
+419,B.P.,02116,5,274 Clarendon Street,321 Dartmouth Street,274 Clarendon Street Boston MA 02116,321 Dartmouth Street Boston MA 02116
+420,B.P.,02116,5,304 Berkeley Street,279 Clarendon Street,304 Berkeley Street Boston MA 02116,279 Clarendon Street Boston MA 02116
+421,B.P.,02116,5,3 Arlington Street,301 Berkeley Street,3 Arlington Street Boston MA 02116,301 Berkeley Street Boston MA 02116
+422,B.P.,02116,5,11 Arlington Street,299 Berkeley Street,11 Arlington Street Boston MA 02116,299 Berkeley Street Boston MA 02116
+423,B.P.,02116,5,282 Berkeley Street,263 Clarendon Street,282 Berkeley Street Boston MA 02116,263 Clarendon Street Boston MA 02116
+424,B.P.,02116,5,270 Clarendon Street,303 Dartmouth Street,270 Clarendon Street Boston MA 02116,303 Dartmouth Street Boston MA 02116
+425,B.P.,02116,5,312 Dartmouth Street,18 Exeter Street,312 Dartmouth Street Boston MA 02116,18 Exeter Street Boston MA 02116
+426,B.P.,02116,5,17 Exeter Street,20 Fairfield Street,17 Exeter Street Boston MA 02116,20 Fairfield Street Boston MA 02116
+427,B.P.,02115,5,9 Fairfield Street,15 Gloucester Street,9 Fairfield Street Boston MA 02115,15 Gloucester Street Boston MA 02115
+428,B.P.,02115,5,14 Gloucester Street,32 Hereford Street,14 Gloucester Street Boston MA 02115,32 Hereford Street Boston MA 02115
+429,B.P.,02115,5,31 Hereford Street,60 Massachusetts Avenue,31 Hereford Street Boston MA 02115,60 Massachusetts Avenue Boston MA 02115
+430,B.P.,02115,5,45 Hereford Street,90 Massachusetts Avenue,45 Hereford Street Boston MA 02115,90 Massachusetts Avenue Boston MA 02115
+431,B.P.,02115,5,30 Gloucester Street,46 Hereford Street,30 Gloucester Street Boston MA 02115,46 Hereford Street Boston MA 02115
+432,B.P.,02115,5,29 Fairfield Street,29 Gloucester Street,29 Fairfield Street Boston MA 02115,29 Gloucester Street Boston MA 02115
+433,B.P.,02115,5,25 Exeter Street,30 Fairfield Street,25 Exeter Street Boston MA 02115,30 Fairfield Street Boston MA 02115
+434,B.P.,02116,5,290 Dartmouth Street,26 Exeter Street,290 Dartmouth Street Boston MA 02116,26 Exeter Street Boston MA 02116
+435,B.P.,02116,5,236 Clarendon Street,283 Dartmouth Street,236 Clarendon Street Boston MA 02116,283 Dartmouth Street Boston MA 02116
+436,B.P.,02116,5,260 Berkeley Street,233 Clarendon Street,260 Berkeley Street Boston MA 02116,233 Clarendon Street Boston MA 02116
+437,B.P.,02116,5,15 Arlington Street,255 Berkeley Street,15 Arlington Street Boston MA 02116,255 Berkeley Street Boston MA 02116
+438,B.P.,02116,5,19 Arlington Street,229 Berkeley Street,19 Arlington Street Boston MA 02116,229 Berkeley Street Boston MA 02116
+439,B.P.,02116,5,220 Clarendon Street,265 Dartmouth Street,220 Clarendon Street Boston MA 02116,265 Dartmouth Street Boston MA 02116
+440,B.P.,02116,5,270 Dartmouth Street,28 Exeter Street,270 Dartmouth Street Boston MA 02116,28 Exeter Street Boston MA 02116
+441,B.P.,02116,5,33 Exeter Street,opposite 41 Fairfield Street,33 Exeter Street Boston MA 02116,41 Fairfield Street Boston MA 02116
+442,B.P.,02116,5,41 Fairfield Street,49 Gloucester Street,41 Fairfield Street Boston MA 02116,49 Gloucester Street Boston MA 02116
+443,B.P.,02115,5,46 Gloucester Street,66 Hereford Street,46 Gloucester Street Boston MA 02115,66 Hereford Street Boston MA 02115
+444,B.P.,02115,5,Hereford Street between Boylston Street and Newbury Street,approximately 370 feet southwesterly (dead end),Hereford Street & Newbury Street Boston MA 02115,
+502,B.P.,02118,4,Private Alley No. 501 (parallel with Concord Square and Rutland Square),Public Alley No. 503,Concord Square Boston MA 02118,
+503,B.P.,02118,4,43 Concord Square,52 Rutland Square,43 Concord Square Boston MA 02118,52 Rutland Square Boston MA 02118
+539,B.P.,02116,4,12 Braddock Park,195 West Newton Street,12 Braddock Park Boston MA 02116,195 West Newton Street Boston MA 02116
+542,B.P.,02116,4,5 Braddock Park,10 Holyoke Street,5 Braddock Park Boston MA 02116,10 Holyoke Street Boston MA 02116
+543,B.P.,02116,4,5 Holyoke Street,208 West Canton Street,5 Holyoke Street Boston MA 02116,208 West Canton Street Boston MA 02116
+701,B.P.,02118,3,327 Shawmut Avenue,584 Tremont Street,327 Shawmut Avenue Boston MA 02118,584 Tremont Street Boston MA 02118
+705,B.P.,02118,3,219 Shawmut Avenue,512 Tremont Street,219 Shawmut Avenue Boston MA 02118,512 Tremont Street Boston MA 02118
+706,B.P.,02118,9,Newland Street between West Concord Street and Worcester Street,approximately 556 feet northwesterly (parallel with W Concord and Worcester),Newland Street & West Concord Street Boston MA 02118,
+710,B.P.,02118,8,opposite 28 East Brookline Street,36 East Newton Street,28 East Brookline Street Boston MA 02118,36 East Newton Street Boston MA 02118
+714,B.P.,02118,8,11 East Springfield Street,Public Alley No. 716,11 East Springfield Street Boston MA 02118,
+715,B.P.,02118,8,652 Massachusetts Avenue,Public Alley No. 716,652 Massachusetts Avenue Boston MA 02118,
+716,B.P.,02118,8,Harrison Avenue between East Springfield Street and Massachusetts Avenue,Public Alley No. 715,Harrison Avenue & East Springfield Street Boston MA 02118,
+718,B.P.,02118,8,10 East Springfield Street,1 Worcester Square,10 East Springfield Street Boston MA 02118,1 Worcester Square Boston MA 02118
+719,B.P.,02118,8,811 Harrison Avenue,Public Alley No. 718,811 Harrison Avenue Boston MA 02118,
+801,Rox.,02115,4,45 Gainsborough Street,opposite 23 St. Stephen Street,45 Gainsborough Street Boston MA 02115,23 St. Stephen Street Boston MA 02115
+802,Rox.,02118,9,opposite 112 Camden Street,opposite 237 Northampton Street,112 Camden Street Boston MA 02118,237 Northampton Street Boston MA 02118
+804,B.P.,02118,9,200 Northampton Street,224 Northampton Street,200 Northampton Street Boston MA 02118,224 Northampton Street Boston MA 02118
+807,Rox.,02115,4,103 Hemenway Street,Private Alley No. 807A at the rear of 133 Hemenway Street,103 Hemenway Street Boston MA 02115,133 Hemenway Street Boston MA 02115
+809,Rox.,02115,4,69 Gainsborough Street,4 Symphony Road,69 Gainsborough Street Boston MA 02115,4 Symphony Road Boston MA 02115
+810,Rox.,02115,4,Public Alley No. 809,Public Alley No. 811,,
+811,Rox.,02115,4,111 Gainsborough Street,74 Symphony Road,111 Gainsborough Street Boston MA 02115,74 Symphony Road Boston MA 02115
+818,Rox.,02115,4,Public Alley No. 819,23 St. Stephen Street,,23 St. Stephen Street Boston MA 02115
+819,Rox.,02115,4,71 Symphony Road,78 Westland Avenue,71 Symphony Road Boston MA 02115,78 Westland Avenue Boston MA 02115
+820,Rox.,02115,4,250 Huntington Avenue,241 St. Botolph Street,250 Huntington Avenue Boston MA 02115,241 St. Botolph Street Boston MA 02115
+821,Rox.,02115,4,Public Alley No. 820,Public Alley No. 822,,
+822,Rox.,02115,4,Public Alley No. 821,241 St. Botolph Street,,241 St. Botolph Street Boston MA 02115
+823,Rox.,02115,4,238 St. Botolph Street,approximately 222 feet southeasterly (dead end),238 St. Botolph Street Boston MA 02115,
+901,Rox.,02115,4,15 Hemenway Street,65 Hemenway Street,15 Hemenway Street Boston MA 02115,65 Hemenway Street Boston MA 02115
+903,Rox.,02115,4,36 Edgerly Road,Haviland Street between Edgerly Road and Massachusetts Avenue,36 Edgerly Road Boston MA 02115,Haviland Street & Edgerly Road Boston MA 02115
+905,B.P.,02115,5,428 Marlborough Street,51 Massachusetts Avenue (branch ~135 ft SW),428 Marlborough Street Boston MA 02115,51 Massachusetts Avenue Boston MA 02115
+908,B.P.,02115,5,459 Marlborough Street,29 Massachusetts Avenue,459 Marlborough Street Boston MA 02115,29 Massachusetts Avenue Boston MA 02115
+909,Rox.,02115,4,8 Hemenway Street,141 Massachusetts Avenue (branch: Haviland Terrace to Haviland Street),8 Hemenway Street Boston MA 02115,141 Massachusetts Avenue Boston MA 02115
+1001,Rox.,02115,4,68 Louis Prang Street,approximately 233 feet southwesterly (dead end),68 Louis Prang Street Boston MA 02115,
+2001,E.B.,02128,1,132 Marginal Street,137 Webster Street,132 Marginal Street East Boston MA 02128,137 Webster Street East Boston MA 02128
