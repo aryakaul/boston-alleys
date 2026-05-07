@@ -29,14 +29,24 @@ function refreshSlide() {
   if (count) count.textContent = `${_ss.idx + 1} / ${_ss.photos.length}`;
 }
 
-window.openLightbox = function (src) {
+function openLightbox(src) {
   document.getElementById('lightbox-img').src = src;
   document.getElementById('lightbox').classList.add('active');
-};
+}
 
-window.closeLightbox = function () {
+function closeLightbox() {
   document.getElementById('lightbox').classList.remove('active');
-};
+}
+
+document.addEventListener('click', (e) => {
+  const slideImg = e.target.closest('.slideshow img');
+  if (slideImg) { openLightbox(slideImg.src); return; }
+  if (e.target.closest('#lightbox')) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeLightbox();
+});
 
 function buildPopupContent(feature, review) {
   const name      = feature.properties.name;
@@ -61,7 +71,7 @@ function buildPopupContent(feature, review) {
     slideshow = `
       <div class="slideshow">
         ${photos.length > 1 ? `<button class="slide-btn prev" onclick="slidePrev()">&#8592;</button>` : ''}
-        <img src="photos/${num}/${photos[0]}" alt="${name}" onclick="openLightbox(this.src)" style="cursor:zoom-in" />
+        <img src="photos/${num}/${photos[0]}" alt="${name}" style="cursor:zoom-in" />
         ${photos.length > 1 ? `<button class="slide-btn next" onclick="slideNext()">&#8594;</button>` : ''}
         ${photos.length > 1 ? `<div class="slide-count">1 / ${photos.length}</div>` : ''}
       </div>`;
@@ -133,12 +143,13 @@ async function init() {
           _ss.photos = review?.photos || [];
           _ss.idx    = 0;
           _ss.num    = num;
+          _ss.photos.forEach(p => { const i = new Image(); i.src = `photos/${num}/${p}`; });
           const center  = layer.getBounds().getCenter();
           const content = buildPopupContent(feature, review);
           if (_ss.popup) {
             _ss.popup.setLatLng(center).setContent(content).openOn(map);
           } else {
-            _ss.popup = L.popup({ maxWidth: 380, minWidth: 360, autoPan: false })
+            _ss.popup = L.popup({ maxWidth: 380, minWidth: 360, autoPan: true })
               .setLatLng(center).setContent(content).openOn(map);
           }
         });

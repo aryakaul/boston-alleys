@@ -251,7 +251,7 @@ html, body, #map {
   font-size: 13px;
   color: #333;
   line-height: 1.55;
-  max-height: 100px;
+  max-height: min(45vh, 300px);
   overflow-y: auto;
 }
 
