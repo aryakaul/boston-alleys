@@ -251,6 +251,8 @@ html, body, #map {
   font-size: 13px;
   color: #333;
   line-height: 1.55;
+  max-height: 160px;
+  overflow-y: auto;
 }
 
 /* Unreviewed popup */
