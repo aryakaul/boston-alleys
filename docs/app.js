@@ -29,6 +29,15 @@ function refreshSlide() {
   if (count) count.textContent = `${_ss.idx + 1} / ${_ss.photos.length}`;
 }
 
+window.openLightbox = function (src) {
+  document.getElementById('lightbox-img').src = src;
+  document.getElementById('lightbox').classList.add('active');
+};
+
+window.closeLightbox = function () {
+  document.getElementById('lightbox').classList.remove('active');
+};
+
 function buildPopupContent(feature, review) {
   const name      = feature.properties.name;
   const alleyType = feature.properties.alley_type;
@@ -52,7 +61,7 @@ function buildPopupContent(feature, review) {
     slideshow = `
       <div class="slideshow">
         ${photos.length > 1 ? `<button class="slide-btn prev" onclick="slidePrev()">&#8592;</button>` : ''}
-        <img src="photos/${num}/${photos[0]}" alt="${name}" />
+        <img src="photos/${num}/${photos[0]}" alt="${name}" onclick="openLightbox(this.src)" style="cursor:zoom-in" />
         ${photos.length > 1 ? `<button class="slide-btn next" onclick="slideNext()">&#8594;</button>` : ''}
         ${photos.length > 1 ? `<div class="slide-count">1 / ${photos.length}</div>` : ''}
       </div>`;
