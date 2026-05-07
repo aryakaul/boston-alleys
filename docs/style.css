@@ -132,7 +132,7 @@ html, body, #map {
 
 .leaflet-popup-content {
   margin: 0 !important;
-  width: 300px !important;
+  width: 360px !important;
 }
 
 .popup-header {

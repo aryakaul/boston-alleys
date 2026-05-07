@@ -129,7 +129,7 @@ async function init() {
           if (_ss.popup) {
             _ss.popup.setLatLng(center).setContent(content).openOn(map);
           } else {
-            _ss.popup = L.popup({ maxWidth: 320, minWidth: 300, autoPan: false })
+            _ss.popup = L.popup({ maxWidth: 380, minWidth: 360, autoPan: false })
               .setLatLng(center).setContent(content).openOn(map);
           }
         });
