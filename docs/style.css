@@ -11,7 +11,7 @@ html, body, #map {
   position: fixed;
   bottom: 28px;
   left: 28px;
-  z-index: 1000;
+  z-index: 650;
   background: white;
   border-radius: 8px;
   padding: 14px 16px;

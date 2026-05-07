@@ -121,7 +121,9 @@ async function init() {
   ]);
 
   function makeLayer(features) {
-    return L.geoJSON({ type: 'FeatureCollection', features }, {
+    const visibleByNumber = new Map();
+
+    const visible = L.geoJSON({ type: 'FeatureCollection', features }, {
       style(feature) {
         const num       = String(feature.properties.number);
         const review    = reviews[num];
@@ -137,8 +139,17 @@ async function init() {
         };
       },
       onEachFeature(feature, layer) {
+        visibleByNumber.set(String(feature.properties.number), layer);
+      },
+    });
+
+    const hit = L.geoJSON({ type: 'FeatureCollection', features }, {
+      style: { color: '#000', weight: 20, opacity: 0, interactive: true },
+      onEachFeature(feature, layer) {
+        const num         = String(feature.properties.number);
+        const visibleLine = visibleByNumber.get(num);
+
         layer.on('click', () => {
-          const num    = String(feature.properties.number);
           const review = reviews[num];
           _ss.photos = review?.photos || [];
           _ss.idx    = 0;
@@ -153,28 +164,40 @@ async function init() {
               .setLatLng(center).setContent(content).openOn(map);
           }
         });
-        layer.on('mouseover', function () { this.setStyle({ weight: 5, opacity: 1 }); });
-        layer.on('mouseout',  function () { this.setStyle({ weight: 3.5, opacity: 0.9 }); });
+        layer.on('mouseover', () => visibleLine?.setStyle({ weight: 5, opacity: 1 }));
+        layer.on('mouseout',  () => visibleLine?.setStyle({ weight: 3.5, opacity: 0.9 }));
       },
     });
+
+    return { visible, hit };
   }
 
   const publicLayer  = makeLayer(geojson.features.filter(f => f.properties.alley_type === 'public'));
   const privateLayer = makeLayer(geojson.features.filter(f => f.properties.alley_type === 'private'));
-  publicLayer.addTo(map);
-  privateLayer.addTo(map);
+  publicLayer.visible.addTo(map);
+  publicLayer.hit.addTo(map);
+  privateLayer.visible.addTo(map);
+  privateLayer.hit.addTo(map);
 
   // Toggle buttons
+  function toggleGroup(group) {
+    const active = map.hasLayer(group.visible);
+    if (active) {
+      map.removeLayer(group.visible);
+      map.removeLayer(group.hit);
+    } else {
+      group.visible.addTo(map);
+      group.hit.addTo(map);
+    }
+    return active;
+  }
+
   document.getElementById('toggle-public').addEventListener('click', function () {
-    const active = map.hasLayer(publicLayer);
-    active ? map.removeLayer(publicLayer) : publicLayer.addTo(map);
-    this.classList.toggle('inactive', active);
+    this.classList.toggle('inactive', toggleGroup(publicLayer));
   });
 
   document.getElementById('toggle-private').addEventListener('click', function () {
-    const active = map.hasLayer(privateLayer);
-    active ? map.removeLayer(privateLayer) : privateLayer.addTo(map);
-    this.classList.toggle('inactive', active);
+    this.classList.toggle('inactive', toggleGroup(privateLayer));
   });
 }
 
