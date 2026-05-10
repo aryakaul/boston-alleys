@@ -25,12 +25,18 @@ window.slideNext = function () {
 function refreshSlide() {
   const img   = document.querySelector('.slideshow img');
   const count = document.querySelector('.slide-count');
-  if (img)   img.src = `photos/${_ss.num}/${_ss.photos[_ss.idx]}`;
+  const src   = `photos/${_ss.num}/${_ss.photos[_ss.idx]}`;
+  if (img)   img.src = src;
   if (count) count.textContent = `${_ss.idx + 1} / ${_ss.photos.length}`;
+  const lb = document.getElementById('lightbox');
+  if (lb.classList.contains('active')) {
+    document.getElementById('lightbox-img').src = src;
+  }
 }
 
-function openLightbox(src) {
-  document.getElementById('lightbox-img').src = src;
+function openLightbox() {
+  document.getElementById('lightbox-img').src =
+    `photos/${_ss.num}/${_ss.photos[_ss.idx]}`;
   document.getElementById('lightbox').classList.add('active');
 }
 
@@ -39,13 +45,44 @@ function closeLightbox() {
 }
 
 document.addEventListener('click', (e) => {
+  if (e.target.closest('.slide-btn')) return;
   const slideImg = e.target.closest('.slideshow img');
-  if (slideImg) { openLightbox(slideImg.src); return; }
+  if (slideImg) { openLightbox(); return; }
   if (e.target.closest('#lightbox')) closeLightbox();
 });
 
 document.addEventListener('keydown', (e) => {
+  const lbActive = document.getElementById('lightbox').classList.contains('active');
   if (e.key === 'Escape') closeLightbox();
+  if (!_ss.photos.length || _ss.photos.length < 2) return;
+  if (!lbActive && !document.querySelector('.slideshow')) return;
+  if (e.key === 'ArrowLeft')  window.slidePrev();
+  if (e.key === 'ArrowRight') window.slideNext();
+});
+
+// Touch swipe on slideshow + lightbox
+let _touchX = null, _touchY = null;
+function onTouchStart(e) {
+  if (e.touches.length !== 1) { _touchX = null; return; }
+  _touchX = e.touches[0].clientX;
+  _touchY = e.touches[0].clientY;
+}
+function onTouchEnd(e) {
+  if (_touchX === null) return;
+  const t  = e.changedTouches[0];
+  const dx = t.clientX - _touchX;
+  const dy = t.clientY - _touchY;
+  _touchX = null;
+  if (Math.abs(dx) < 40 || Math.abs(dx) < Math.abs(dy)) return;
+  if (!_ss.photos.length || _ss.photos.length < 2) return;
+  e.preventDefault();
+  if (dx < 0) window.slideNext(); else window.slidePrev();
+}
+document.addEventListener('touchstart', (e) => {
+  if (e.target.closest('.slideshow') || e.target.closest('#lightbox')) onTouchStart(e);
+}, { passive: true });
+document.addEventListener('touchend', (e) => {
+  if (e.target.closest('.slideshow') || e.target.closest('#lightbox')) onTouchEnd(e);
 });
 
 function buildPopupContent(feature, review) {
