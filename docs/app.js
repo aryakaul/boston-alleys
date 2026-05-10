@@ -110,6 +110,9 @@ async function init() {
     minZoom: 13,
   }).setView(MAP_CENTER, MAP_ZOOM);
 
+  map.on('popupopen', () => document.body.classList.add('popup-open'));
+  map.on('popupclose', () => document.body.classList.remove('popup-open'));
+
   L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
     maxZoom: 19,

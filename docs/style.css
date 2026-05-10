@@ -125,6 +125,13 @@ html, body, #map {
 /* Popup */
 .leaflet-popup-pane { z-index: 1100; }
 
+/* When a popup is open, hide legend and zoom controls so the popup is
+   unobstructed. Leaflet's popup pane lives inside a transformed
+   .leaflet-map-pane which forms its own stacking context, so a high
+   z-index alone can't lift the popup above siblings of #map. */
+body.popup-open #legend,
+body.popup-open .leaflet-control-container { display: none; }
+
 .leaflet-popup-content-wrapper {
   border-radius: 10px;
   padding: 0;
