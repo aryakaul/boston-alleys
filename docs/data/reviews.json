@@ -57,10 +57,31 @@
     "photos": ["1.webp", "2.webp", "3.webp"]
   },
   "715": {
-    "vibe": 6,
+    "vibe": 4,
     "shortcut": 4,
     "potential": 6,
     "notes": "I missed this alley on my first ride through. It is another extension to Alley 716. Overall, fairly fine; with nothing very exceptional. There is a fun sign saying no pooping or peeing, but I'm confused which pet dogs would use this area as a bathroom? I don't know many dogs that poop on gravel willingly.",
     "photos": ["1.webp"]
+  },
+  "710": {
+    "vibe": 5,
+    "shortcut": 6,
+    "potential": 8,
+    "notes": "Overall a fine alleyway. Not my favorite, but nothing too bad about it. Predominantly a parking area for residents of the nearby apartment buildings. I do think the streetlamps are a nice touch, and I would be curious to come back in the evening to see how the lights look at night. Does have some lovely trees, but again, the foliage is slightly gated as opposed to being easily accessible from the alley. My favorite feature of this spot was this random art thing (bird bath?) that is accessible from the alley. It simply states 'What is this life, if full of care, we have no time to stand and stare?' Honestly fits into the vibe of this project. Some potential for future artwork!",
+    "photos": ["1.webp"]
+  },
+  "715": {
+    "vibe": 6,
+    "shortcut": 4,
+    "potential": 6,
+    "notes": "I missed this alley on my first ride through. It is another extension to Alley 716. Overall, fairly fine; with nothing very exceptional. There is a fun sign saying no pooping or peeing, but I'm confused which pet dogs would use this area as a bathroom? I don't know many dogs that poop on gravel willingly.",
+    "photos": ["1.webp", "2.webp", "3.webp"]
+  },
+  "7216": {
+    "vibe": 7,
+    "shortcut": 5,
+    "potential": 7,
+    "notes": "My first private alleyway! This was not gated off as I expected, it is unclear to me why this is a private alleyway but the others are not. Overall was fine, some evidence of being used by individuals via porches and balconies but nothing exceptional. I did not note any particular artistic merit to this space, but it looked fine and passable. Curious how this one will compare to other private alleyways!",
+    "photos": ["1.webp", "2.webp", "3.webp", "4.webp"]
   }
 }
